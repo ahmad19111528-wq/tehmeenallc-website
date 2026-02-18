@@ -1,82 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tehmeena LLC</title>
+<title>Tehmeena LLC | Online Store</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f4f6f8;
+font-family:Arial, sans-serif;
+background:#f8f9fa;
 color:#333;
 }
 
-header{
+/* Top Header */
+.top-header{
 background:#0f172a;
 color:white;
-padding:70px 20px;
-text-align:center;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header h1{
-margin:0;
-font-size:42px;
+.logo{
+font-size:22px;
+font-weight:bold;
 letter-spacing:1px;
 }
 
-header p{
-margin-top:15px;
-font-size:18px;
-opacity:0.9;
+.search-bar input{
+padding:8px;
+width:280px;
+border-radius:4px;
+border:none;
 }
 
-.button{
-display:inline-block;
-margin-top:25px;
-padding:12px 28px;
+/* Navigation */
+.nav{
 background:white;
-color:#0f172a;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
+padding:12px 40px;
+border-bottom:1px solid #ddd;
+display:flex;
+gap:25px;
 }
 
-section{
-padding:70px 20px;
-max-width:1000px;
-margin:auto;
+.nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+/* Hero Section */
+.hero{
+background:white;
+padding:60px 40px;
 text-align:center;
 }
 
-h2{
-font-size:30px;
-margin-bottom:25px;
+.hero h1{
+margin:0;
+font-size:36px;
 color:#0f172a;
 }
 
-.card{
-background:white;
-padding:30px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.hero p{
+color:#666;
+margin-top:10px;
 }
 
+/* Products */
+.products{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+gap:25px;
+}
+
+.product{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:6px;
+}
+
+.product h4{
+margin:15px 0 5px 0;
+font-size:16px;
+}
+
+.price{
+color:#0f172a;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+button{
+background:#0f172a;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Footer */
 footer{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:60px;
-}
-
-.contact-box{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+padding:30px;
+margin-top:50px;
+font-size:14px;
 }
 
 </style>
@@ -84,59 +128,62 @@ box-shadow:0 5px 20px rgba(0,0,0,0.08);
 
 <body>
 
-<header>
-<h1>Tehmeena LLC</h1>
-<p>Professional Retail & E-Commerce Company</p>
-<a href="#contact" class="button">Partner With Us</a>
-</header>
-
-<section>
-<h2>About Our Company</h2>
-<div class="card">
-<p>
-Tehmeena LLC is a U.S.-registered retail company specializing in sourcing
-authentic branded products and offering them across established online marketplaces.
-Our focus is on maintaining brand integrity, compliance, and long-term business relationships.
-</p>
+<div class="top-header">
+<div class="logo">Tehmeena LLC</div>
+<div class="search-bar">
+<input type="text" placeholder="Search products">
 </div>
-</section>
-
-<section>
-<h2>Our Business Model</h2>
-<div class="card">
-<p>
-We purchase directly from brands and authorized suppliers to ensure product authenticity.
-Our company operates across major e-commerce platforms and follows strict compliance
-standards regarding pricing, product representation, and customer service.
-</p>
+<div>Account | Cart (0)</div>
 </div>
-</section>
 
-<section>
-<h2>What We Sell</h2>
-<div class="card">
-<p>
-Premium food & confectionery products<br>
-Grocery & household brands<br>
-Health & personal care products<br>
-High-demand consumer goods
-</p>
+<div class="nav">
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">Categories</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms</a>
+<a href="#">Contact</a>
 </div>
-</section>
 
-<section id="contact">
-<h2>Business Contact</h2>
-<div class="contact-box">
-<p><strong>Company Name:</strong> Tehmeena LLC</p>
-<p><strong>Email:</strong> info@tehmeenallc.com</p>
-<p><strong>Business Type:</strong> Retail & E-Commerce</p>
-<p><strong>Location:</strong> United States</p>
-<p><strong>Business Hours:</strong> Monday – Friday</p>
+<div class="hero">
+<h1>Authentic Branded Products</h1>
+<p>Trusted Retailer | Secure Transactions | Quality Assured</p>
 </div>
-</section>
+
+<div class="products">
+
+<div class="product">
+<img src="https://via.placeholder.com/300x200">
+<h4>Premium Chocolate Selection</h4>
+<div class="price">$29.99</div>
+<button>View Details</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300x200">
+<h4>Health & Wellness Product</h4>
+<div class="price">$19.99</div>
+<button>View Details</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300x200">
+<h4>Grocery Essential Item</h4>
+<div class="price">$14.99</div>
+<button>View Details</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300x200">
+<h4>Household Product</h4>
+<div class="price">$24.99</div>
+<button>View Details</button>
+</div>
+
+</div>
 
 <footer>
-<p>© 2026 Tehmeena LLC. All Rights Reserved.</p>
+© 2026 Tehmeena LLC | Registered Retail Business | All Rights Reserved
 </footer>
 
 </body>
